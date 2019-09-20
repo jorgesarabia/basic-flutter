@@ -20,6 +20,7 @@ class Description extends StatelessWidget{
       child: Text(
         descriptionPlace,
         style: const TextStyle(
+          fontFamily: "Lato",
           fontSize: 16.0,
           fontWeight: FontWeight.bold,
           color: Color(0xFF56575a),
@@ -29,7 +30,7 @@ class Description extends StatelessWidget{
 
     final star_half = Container(
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 303.0,
         right: 3.0
       ),
       child: Icon(
@@ -40,7 +41,7 @@ class Description extends StatelessWidget{
 
     final star_border = Container(
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 303.0,
         right: 3.0
       ),
       child: Icon(
@@ -51,7 +52,7 @@ class Description extends StatelessWidget{
 
     final star = Container(
       margin: EdgeInsets.only(
-        top: 323.0,
+        top: 303.0,
         right: 3.0
       ),
       child: Icon(
@@ -64,7 +65,7 @@ class Description extends StatelessWidget{
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 320.0,
+            top: 300.0,
             left: 20.0,
             right: 20.0,
           ),
