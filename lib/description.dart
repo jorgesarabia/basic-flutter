@@ -11,7 +11,7 @@ class Description extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    double topAl = 250.0;
+    double topAl = 320.0;
 
     final description = Container(
       margin: EdgeInsets.only(
