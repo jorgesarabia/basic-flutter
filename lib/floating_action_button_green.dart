@@ -8,12 +8,15 @@ class FloatingActionButtonGreen extends StatefulWidget {
 }
 
 class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
+  
+  IconData icon = Icons.favorite;
+  bool like = false;
+
   void onPressedFav() {
-    Scaffold.of(context).showSnackBar(
-      SnackBar(
-        content: Text("Corazon presionado"),
-      ),
-    );
+    like = !like;
+    setState(() {
+      icon = like ? Icons.favorite : Icons.favorite_border;
+    });
   }
 
   @override
@@ -23,7 +26,7 @@ class _FloatingActionButtonGreen extends State<FloatingActionButtonGreen> {
       mini: true,
       tooltip: "Fav",
       onPressed: onPressedFav,
-      child: Icon(Icons.favorite_border),
+      child: Icon(icon),
     );
   }
 }
