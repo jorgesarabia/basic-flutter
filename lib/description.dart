@@ -11,6 +11,8 @@ class Description extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
+    double topAl = 250.0;
+
     final description = Container(
       margin: EdgeInsets.only(
         top: 20.0,
@@ -30,7 +32,7 @@ class Description extends StatelessWidget{
 
     final star_half = Container(
       margin: EdgeInsets.only(
-        top: 303.0,
+        top: topAl + 3.0,
         right: 3.0
       ),
       child: Icon(
@@ -41,7 +43,7 @@ class Description extends StatelessWidget{
 
     final star_border = Container(
       margin: EdgeInsets.only(
-        top: 303.0,
+        top: topAl + 3.0,
         right: 3.0
       ),
       child: Icon(
@@ -52,7 +54,7 @@ class Description extends StatelessWidget{
 
     final star = Container(
       margin: EdgeInsets.only(
-        top: 303.0,
+        top: topAl + 3.0,
         right: 3.0
       ),
       child: Icon(
@@ -65,7 +67,7 @@ class Description extends StatelessWidget{
       children: <Widget>[
         Container(
           margin: EdgeInsets.only(
-            top: 300.0,
+            top: topAl,
             left: 20.0,
             right: 20.0,
           ),
